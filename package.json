@@ -1,0 +1,29 @@
+{
+  "name": "ts-us-states-list",
+  "version": "0.0.1",
+  "dependencies": {
+    "typescript": "^2.7.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^19.2.4",
+    "jest": "*",
+    "ts-loader": "^3.4.0",
+    "webpack": "^3.10.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/preprocessor.js"
+    },
+    "testMatch": [
+      "**/__tests__/*.(ts|tsx|js)"
+    ]
+  }
+}
